@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>222</div>
+  <audio controls="controls" autoplay="autoplay" style="display: none;">
+    <source src="" type="audio/mpeg" />
+  </audio>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <img src="https://img1.baidu.com/it/u=2732652199,4165252706&fm=26&fmt=auto" width="30px" id="btn"
+    style="margin: 50px ;">
+  <audio autoplay="autoplay" src="http://www.yinpin.com/upload/dianneisuoyoushangpinqingcang0706012.mp3" id="myaudio"
+    controls="controls" loop="false" hidden="true">
+  </audio>
+</body>
+<script type="text/javascript">
+  var btn = document.getElementById('btn');
+  var audio = document.getElementById('myaudio');
+  var tag = true;
+  btn.onclick = function () {
+    if (tag) {
+      audio.pause();
+      tag = false;
+    } else {
+      audio.play();
+      tag = true;
+    }
+  }
+</script>
+
+</html>
